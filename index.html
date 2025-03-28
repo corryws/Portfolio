@@ -6,38 +6,53 @@
     <title>Portfolio di Corrado Trigilia</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #1e1e2e, #2a2a40);
+            color: white;
             text-align: center;
-            background-color: #f4f4f4;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         }
         h1, h2 {
-            color: #333;
+            color: #ffcc00;
         }
         p {
-            color: #666;
-            line-height: 1.6;
+            color: #ddd;
+            line-height: 1.8;
         }
         .links a {
             display: inline-block;
             margin: 10px;
-            padding: 10px 20px;
-            background: #0073e6;
-            color: white;
+            padding: 12px 25px;
+            background: #ffcc00;
+            color: #1e1e2e;
             text-decoration: none;
-            border-radius: 5px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s;
         }
         .links a:hover {
-            background: #005bb5;
+            background: #ffaa00;
+        }
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .skill {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -48,16 +63,18 @@
         <p>Sono uno sviluppatore appassionato di videogiochi, con il desiderio di realizzare esperienze uniche e coinvolgenti che possano lasciare il segno.</p>
         
         <h2>Le mie competenze</h2>
-        <p>✔️ Unity, C#, Python<br>
-           ✔️ Game Design, UI/UX<br>
-           ✔️ Programmazione gameplay e logica di gioco</p>
+        <div class="skills">
+            <div class="skill">🎮 Unity, C#, Python</div>
+            <div class="skill">🎨 Game Design, UI/UX</div>
+            <div class="skill">🛠 Programmazione gameplay e logica di gioco</div>
+        </div>
         
         <h2>Il mio CV</h2>
-        <p><a href="cv.pdf" download>Scarica il mio Curriculum Vitae</a></p>
+        <p><a href="cv.pdf" download style="color: #ffcc00; text-decoration: underline;">Scarica il mio Curriculum Vitae</a></p>
         
         <div class="links">
             <a href="https://corryws.itch.io" target="_blank">Il mio Itch.io</a>
-            <a href="https://www.linkedin.com/in/corrado-trigilia-194b7a180/ target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/corrado-trigilia-194b7a180/" target="_blank">LinkedIn</a>
         </div>
     </div>
 </body>
