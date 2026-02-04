@@ -279,6 +279,29 @@
 				</a>
 			</p>
 		</div>
+
+		<!-- SEZIONE GIOCHI WEB-HTML -->
+		<h2 style="margin-top:60px;">Test here my other games</h2>
+		<p style="color:#ccc;">Directly play the projects that i develop as Game Developer.</p>
+
+		<!-- Kuromi Game -->
+		<div class="container" style="max-width:800px; margin:40px auto; background:rgba(20,20,20,0.9); padding:20px; border-radius:12px; border:1px solid #333;">
+			<h3 style="color:#ffcc00;">Kuromi Labyrinth</h3>
+			<p style="color:#aaa;">Help Kuromi collect all the apples in this fun maze!</p>
+
+			<div class="iframe-container" id="kuromi-container">
+				<div class="overlay">
+					<button class="play-button" onclick="loadIframe('kuromi')">▶ Play</button>
+				</div>
+			</div>
+
+			<p style="margin-top:10px;">
+				<a href="https://html-classic.itch.zone/html/16324825/KuromiAppleMazeAdventure/index.html?v=1769950067" target="_blank" style="color:#ffcc00; text-decoration:underline;">
+					Open to another window
+				</a>
+			</p>
+		</div>
+
 		
 		
 		<!-- TIMELINE -->
@@ -369,6 +392,8 @@
 			iframe.src = "https://ridewithedd.blasterfoundry.software";
 		else if (id === 'circuito')
 			iframe.src = "https://i-iesgame.blasterfoundry.software";
+		else if (id === 'kuromi')
+    		iframe.src = "https://html-classic.itch.zone/html/16324825/KuromiAppleMazeAdventure/index.html?v=1769950067";
 		
 		iframe.frameBorder = "0";
 		iframe.allowFullscreen = true;
